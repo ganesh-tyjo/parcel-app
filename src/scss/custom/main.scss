@@ -1,0 +1,68 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 50%;
+  height: 50%;
+  border-radius: 15px;
+}
+
+#hear-joke {
+  background-color: $dark;
+
+  .wrapper {
+    background-color: darken($color: $dark, $amount: 5);
+  }
+}
+
+#create-joke {
+  background-color: $light;
+
+  .wrapper {
+    background-color: darken($color: $light, $amount: 5);
+  }
+}
+
+select {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.8em;
+  margin: 0.2em;
+  border: none;
+  outline: none;
+
+  option {
+    padding: 0.8em 0;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.8em;
+  margin: 0.2em;
+  outline: none;
+  border: none;
+  transition: ease-in-out 300ms;
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: white;
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 5);
+  }
+}

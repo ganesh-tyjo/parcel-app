@@ -3,9 +3,14 @@ export const joke = {
   // Fetch random joke from API
   getJoke: () => {
     return new Promise((resolve, reject) => {
-      fetch('http://api.icndb.com/jokes/random')
+      fetch(
+        'https://us-central1-dadsofunny.cloudfunctions.net/DadJokes/random/jokes'
+      )
         .then((res) => res.json())
-        .then((data) => resolve(data.value.joke));
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => reject(error));
     });
   },
 };
