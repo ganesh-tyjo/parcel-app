@@ -13,19 +13,44 @@
 
   main {
     margin: 1em;
+    min-width: 60%;
   }
 }
 
-.quote {
-  text-align: center;
-  color: $secondary;
-  font-size: 2rem;
+.wallpaper {
+  position: relative;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.wallpaper::before {
+  content: '';
+  background-image: url('./../../content/images/7947934761e6d47fa2eb193c.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  border-radius: 15px;
   margin: 0 0 0.4em 0;
+}
+
+.quote {
+  position: relative;
+  text-align: center;
+  color: black;
+  line-height: 0.9;
+  font-size: 2rem;
 
   .speaker {
     font-size: 1.2rem;
     margin: 1em 0 3em 0;
-    color: darken($color: $secondary, $amount: 15);
+    color: darken($color: black, $amount: 15);
   }
 }
 
