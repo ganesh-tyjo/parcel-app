@@ -66,3 +66,14 @@ select {
     background-color: darken($color: $primary, $amount: 5);
   }
 }
+
+#joke {
+  div {
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 0.8em;
+    margin: 0.2em 0 0 0;
+    background-color: lighten($color: $light, $amount: 20);
+  }
+}
