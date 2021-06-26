@@ -10,11 +10,26 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+
+  main {
+    margin: 1em;
+  }
+}
+
+.quote {
+  text-align: center;
+  color: $secondary;
+  font-size: 2rem;
+  margin: 0 0 0.4em 0;
+
+  .speaker {
+    font-size: 1.2rem;
+    margin: 1em 0 3em 0;
+    color: darken($color: $secondary, $amount: 15);
+  }
 }
 
 .wrapper {
-  width: 50%;
-  height: 50%;
   border-radius: 15px;
 }
 
@@ -23,6 +38,7 @@
 
   .wrapper {
     background-color: darken($color: $dark, $amount: 5);
+    padding: 1em;
   }
 }
 
@@ -31,6 +47,7 @@
 
   .wrapper {
     background-color: darken($color: $light, $amount: 5);
+    padding: 1em;
   }
 }
 
@@ -65,15 +82,18 @@ select {
   &:hover {
     background-color: darken($color: $primary, $amount: 5);
   }
+
+  &[disabled] {
+    background-color: lighten($color: $primary, $amount: 10);
+  }
 }
 
 #joke {
-  div {
-    display: inline-block;
-    font-size: 1rem;
-    border-radius: 15px;
-    padding: 0.8em;
-    margin: 0.2em 0 0 0;
-    background-color: lighten($color: $light, $amount: 20);
-  }
+  border-radius: 15px;
+  background-color: darken($color: $dark, $amount: 10);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+  margin: 0.4em 0 0 0;
 }

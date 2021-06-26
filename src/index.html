@@ -8,21 +8,33 @@
   </head>
   <body>
     <section id="hear-joke" class="section">
-      <div class="wrapper">
-        <select id="joke-type">
-          <option value="general">General</option>
-          <option value="programming">Programming</option>
-        </select>
-
-        <button id="get-joke" class="btn btn-primary">Tell Joke</button>
-
-        <div id="joke"></div>
-      </div>
-      <p id="copy"></p>
+      <main>
+        <div class="quote">
+          You'll find that life
+          <br />
+          is still worthwhile,
+          <br />
+          <strong>if you just smile.</strong>
+          <br />
+          <p class="speaker">- Charlie Chaplin</p>
+        </div>
+        <div class="wrapper">
+          <div>
+            <select id="joke-type">
+              <option value="general">General</option>
+              <option value="programming">Programming</option>
+            </select>
+            <button id="get-joke" class="btn btn-primary">Tell Joke</button>
+          </div>
+          <div id="joke"></div>
+        </div>
+        <div>
     </section>
 
     <section id="create-joke" class="section">
-      <div class="wrapper">create your joke here</div>
+      <main>
+        <div class="wrapper">create your joke here</div>
+      </main>
     </section>
 
     <script src="./js/custom/main.js"></script>
