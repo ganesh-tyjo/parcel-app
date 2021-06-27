@@ -1,5 +1,8 @@
 @import './variables';
 
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -130,6 +133,40 @@ select {
 
   &[disabled] {
     background-color: lighten($color: $primary, $amount: 10);
+  }
+}
+
+.btn-primary-awesome {
+  background-color: transparent;
+  color: white;
+  transition: ease-out 300ms;
+  border: 2px solid $primary;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  &::before {
+    transition: 500ms all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: $primary;
+  }
+
+  &:hover::before {
+    transition: 500ms all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
   }
 }
 
