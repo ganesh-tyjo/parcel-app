@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
 .section {
   display: flex;
   align-items: center;
@@ -43,17 +47,26 @@
 }
 
 .quote {
+  font-family: 'Shadows Into Light', cursive;
   position: absolute;
   top: 50%;
   text-align: center;
-  color: white;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
   font-size: 2rem;
   transform: translate(0, -50%);
+
+  strong {
+    color: rgb(255, 107, 8);
+    -webkit-text-stroke-width: 0.4px;
+  }
 
   .speaker {
     font-size: 1.2rem;
     margin: 1em 0 3em 0;
-    color: $secondary;
+    color: white;
+    -webkit-text-stroke-width: 0;
   }
 }
 

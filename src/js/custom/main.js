@@ -4,6 +4,13 @@ import { joke } from './joke';
 // Import NPM package
 import _ from 'lodash';
 
+// Import Google fonts
+import(
+  'https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'
+);
+
+import('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 // Import style
 import './../../scss/custom/main.scss';
 
