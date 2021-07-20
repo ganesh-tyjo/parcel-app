@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "prod": "parcel build src/index.html"
+    "dev": "npm run clean && parcel src/index.html --out-dir dist --public-url ./",
+    "prod": "npm run clean && parcel build src/index.html --out-dir dist --public-url ./",
+    "clean": "rimraf dist && rimraf .cache"
   },
   "keywords": [],
   "author": "Ganesh Shinde",
@@ -13,6 +14,7 @@
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
     "sass": "^1.34.0"
   }
 }
