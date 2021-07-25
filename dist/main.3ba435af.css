@@ -16,11 +16,13 @@ body {
   min-height: 100vh;
 }
 .main-section p {
-  background-color: #49beb7;
-  color: #facf5a;
+  background-color: #facf5a;
+  color: #49beb7;
   font-size: 3rem;
   padding: 1em;
+  margin: 0.4em;
   border-radius: 8px;
+  border-bottom: 0.4em solid #085f63;
 }
 
 /*# sourceMappingURL=main.3ba435af.css.map */
