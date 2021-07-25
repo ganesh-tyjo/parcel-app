@@ -12,3 +12,18 @@ body {
   font-family: 'Balsamiq Sans', cursive;
   background: $primary;
 }
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  p {
+    background-color: $light;
+    color: $secondary;
+    font-size: 3rem;
+    padding: 1em;
+    border-radius: 8px;
+  }
+}
